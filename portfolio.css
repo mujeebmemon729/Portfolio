@@ -1,0 +1,535 @@
+ *{
+    margin: 0;
+    padding: 0;
+   font-family: sans-serif;
+  
+}
+body{
+    background-color:#051c24;
+    transition: 0.5s;
+}
+nav{
+      backdrop-filter: blur(20px);
+    position: fixed;
+    bottom: 0;
+    left: 30%;
+    background: rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    height: 5vh;
+    width: 500px;
+    border-radius: 20px;
+    z-index: 999 ;
+}
+
+ .links img{
+    margin: 20px;
+    width: 30px;
+   padding: 10px;
+   cursor: pointer;
+   scroll-behavior: smooth;
+ }
+ .links img:hover{
+    background: #034961;
+    border-radius: 10px;
+    transition: 0.5s;
+  
+ }
+
+
+
+.mytext{
+    color: white;
+    font-size: 30px;
+  margin-top: 150px;
+  margin-left: 70px;
+ 
+    
+}
+.mytext h4{
+    color: rgb(212, 45, 212);
+    text-wrap: nowrap;
+    overflow: hidden;
+    width: 320px;
+    animation: typing 2s steps(100) infinite alternate-reverse;
+    
+}
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+}
+.mytext h3{
+    color: rgb(212, 45, 212);
+}
+.mytext button{
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: rgb(128, 43, 128);
+    border: none;
+    color: white;
+    width: 130px;
+    font-size: 15px;
+}
+.mytext button:hover{
+  background-color: rgb(0, 5, 31);
+  transition: 1s;
+}
+.mytext h1{
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+.logo img{
+   margin-right: 10px;
+    width: 70px;
+    border-radius: 50%;
+    height: 60px;
+    margin-left: 40px;
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+     background: rgb(0, 0, 0, 0.2);
+     padding: 10px;
+     color: white;
+}
+.containor{
+     background: rgb(0, 0, 0, 0.2);
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    height: 350px;
+}
+.profile{
+    width: 280px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+   
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+  width: 800px;
+  height: 100px;
+  padding: 10px;
+  text-align: justify;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 130px;
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.cards{
+    display: flex;
+    position: absolute;
+    top: 720px;
+    left: 11.2cm;
+    gap: 40px;
+
+}
+.box:hover{
+     transform: translateY(-10px);
+    transition: 0.5s;
+     border: 1px solid #051c24;
+}
+.skills{
+    width: 95%;
+    height: 250px;
+    padding: 30px;
+    display: flex;
+    gap: 130px;
+    margin-top: 40px;
+     background: rgb(0, 0, 0, 0.2);
+}
+.card1{
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    height: 270px;
+      background: rgb(0, 0, 0, 0.3);
+      font-size: 20px;
+      color: white;
+     
+}
+.card1 img{
+    padding: 20px;
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+}
+.card1:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+     box-shadow: 0 0 10px #00ffd5;
+}
+.project{
+    position: relative;
+  display: flex;
+    width: 51%;
+    margin-left: 300px;
+    height: 400px;
+    margin-top: 50px;   
+    overflow: hidden;
+    padding: 20px;
+   
+ 
+}
+.perfume{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    color: white;
+}
+.perfume img{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+  
+}
+.perfume h2{
+    margin-top: 10px;
+}
+section h1{
+    margin-left: 15cm;
+    margin-top: 20px;
+    color: white;
+   
+}
+section{
+     background: rgb(0, 0, 0, 0.2);
+     width: 99%;
+     height: 460px;
+     margin-top: 30px;
+   
+}
+
+.slide{
+    display: flex;
+    transition: 1s;
+}
+#Next{
+    left: 15cm;
+    top: 180px;
+   position: absolute;
+    width: 60px;
+     background: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+
+}
+#Prev{
+    position: absolute;
+     width: 60px;
+     right: 16cm;
+    top: 180px;
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    z-index: 999;
+}
+.reviews{
+    width: 98%;
+    height: 400px;
+    text-align: center;
+     background: rgb(0, 0, 0, 0.2);
+     margin-top: 20px;
+     padding: 10px;
+     color: white;
+     display: flex;
+     gap: 30px;
+
+}
+.client{
+    width: 300px;
+    height: 250px;
+   margin-left: 50px;
+    padding: 10px;
+    margin-top: 90px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.client:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+     box-shadow: 0 0 10px #00ffd5;
+}
+.client img{
+    width: 60%;
+    height: 60%;
+   border-radius: 50%;
+   border: 1px solid white;
+}
+.reviews h1{
+    position: absolute;
+    left: 15cm;
+}
+.contact{
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+  padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     color: white;
+    border: 1px solid white;
+    margin-left: 300px;
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 2px solid whitesmoke;
+    border: 10px;
+    padding: 20px;
+    width: 70%;
+}
+.contact h1{
+    margin-bottom: 15px;
+}
+.group{
+    position: relative;
+}
+.group input{
+    width: 96%;
+    color: white;
+    background: none;
+    padding: 10px;
+    border: none;
+    border-bottom: 5px solid cyan;
+    outline: none;
+    font-size: 10px;
+    position: relative;
+    height: 5vh;
+}
+label{
+    position: absolute;
+    left: 30px;
+    color: white;
+    top: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.group input:focus+label,
+.group input:valid+label{
+  top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  left: 10px;
+  color: #bdbdbd;
+}
+input:focus{
+    border-bottom: 5px solid #bcbcbc;
+}
+ #btn{
+    background-color: #00ffd5;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40%;
+    cursor: pointer;
+    width: 100px;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+}
+#btn:hover{
+  background-color: rgb(46, 41, 87);
+  color: white;
+  transition: 1s;
+}
+@media (max-width: 768px) {
+  html,body{
+    overflow-x: hidden;
+  }
+  /* NAVBAR */
+  nav {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .links img {
+    margin: 10px;
+    width: 20px;
+  }
+
+  /* HERO TEXT */
+  .mytext {
+    margin: 100px 20px;
+    text-align: center;
+  }
+
+  .mytext h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .mytext h4 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  /* ABOUT SECTION */
+  .containor {
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text {
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .cards {
+      margin-left: 0;
+    position: static;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+  }
+  .box{
+    margin-top: 20px;
+  }
+
+  /* SKILLS */
+  .skills {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card1 {
+    width: 90%;
+    margin-right: 35px;
+  }
+
+  /* PROJECTS */
+  section {
+    height: auto;
+  }
+
+  section h1 {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .project {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 250px;
+  }
+
+  .slide {
+    gap: 40px;
+  }
+
+  .perfume {
+    width:400px;
+    border-radius: 10px;
+   
+    
+  }
+  .perfume img{
+    width: 60%;
+    height: 60%;
+    margin-right: 70px;
+ 
+   
+  }
+
+#Prev{
+     display: block; 
+    position: absolute;
+    top: 35%;
+    left: 5px;
+}
+  #Next {
+    display: block; 
+    position: absolute;
+    top: 35%;
+    left: 300px;
+
+  
+  }
+  #Prev img{
+    width: 40px;
+  }
+  #Next img{
+    width: 40px;
+  }
+
+  /* REVIEWS */
+  .reviews {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .client {
+    margin: 20px 0;
+    width: 85%;
+  }
+
+  .reviews h1 {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  /* CONTACT */
+  form {
+    width: 90%;
+  }
+
+  #btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact{
+    margin: 30px;
+    width: 80%;
+  }
+}

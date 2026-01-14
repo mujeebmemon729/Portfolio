@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sss, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="home">
+            <img src="IMG-20251222-WA0003.jpg" alt="">
+            <h2>MUJEEB MEMON</h2>
+        </div>
+        <nav>
+
+            <div class="links">
+                <a href="#home"><img src="home.png" alt="" title="Home"></a>
+                <a href="#about"><img src="person.png" alt="" title="About"></a>
+                <a href="#skills"><img src="code off.png" alt="" title="Skills"></a>
+                <a href="#project"><img src="business.png" alt="" title="Work"></a>
+                <a href="#contact"><img src="email.png" alt="" title="Contact"></a>
+            </div>
+        </nav>
+        <div class="mytext">
+            <h3>HI THERE I'M</h3>
+            <H1>MUJEEB MEMON</H1>
+            <H4>Front-End Developer</H4>
+            <a href="#project"><button>See My Work</button></a>
+        </div>
+        <div class="containor" id="about">
+            <div class="profile">
+                <img src="my pro.png" alt="">
+            </div>
+            <div class="text">
+                <p>Hello! i'm Mujeeb Memon, a possible front-end developer with 2 years of experience in creating modern
+                    and responsive web applications.I spacialize in turning design ideas into clean,functional,and
+                    users-freindly websites.
+                </p>
+                <br>
+                <p>
+                    I have strong skills in HTML, CSS, JAVASCRIPT, AND I Love creating smooth user experiences and
+                    building websites that are visually apearing, accessble, and high performing.</p>
+            </div>
+            <div class="cards">
+                <div class="box" >
+                    <h1>2+</h1>
+                    <p>Years Experience</p>
+                </div>
+                <div class="box">
+                    <h1>10+</h1>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="box">
+                    <h1>100%</h1>
+                    <p>Client Satisfication</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <div class="card1" data-aos="fade-up">
+                <img src="skill2.jpg" alt="">
+                <h4>HTML</h4>
+            </div>
+            <div class="card1" data-aos="fade-up">
+                <img src="skill1.jpg" alt="">
+                <h4>CSS</h4>
+            </div>
+            <div class="card1" data-aos="fade-up">
+                <img src="skill3.jpg" alt="">
+                <h4>JavaScript</h4>
+            </div>
+        </div>
+        <section id="project" >
+            <h1>Projects</h1>
+           
+            <div class="project" data-aos="fade-up">
+                 <button id="Prev"><img src="arrow_left_alt_50dp_F3F3F3_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+                <div class="slide" id="slide">
+                <div class="perfume">
+                    <a href=""><img src="55.jpg.jpg" alt=""></a>
+                    <h2>Perfume Website</h2>
+                </div>
+                <div class="perfume">
+                    <a href=""><img src="Screenshot (2).png" alt=""></a>
+                    <h2>Calculator Website</h2>
+                </div>
+                <div class="perfume">
+                    <a href=""><img src="55.jpg.jpg" alt=""></a>
+                    <h2>Perfume Website</h2>
+                </div>
+                 <div class="perfume">
+                    <a href=""><img src="55.jpg.jpg" alt=""></a>
+                    <h2>Perfume Website</h2>
+                </div>
+                 <div class="perfume">
+                    <a href=""><img src="55.jpg.jpg" alt=""></a>
+                    <h2>Perfume Website</h2>
+                </div>
+                </div>
+                 <button id="Next"><img src="arrow_right_alt_50dp_F3F3F3_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+                 </section>
+                
+            </div>
+             <div class="reviews">
+                <h1>Reviews</h1>
+                <div class="client" >
+                    <img src="muhammad.png" alt="">
+                    <h2>Muhammad Khan</h2>
+                    <p>Did an excellent job converting our requirements into a responsive and visually appealing website. Highly satisfied with the final result.</p>
+                </div>
+                <div class="client">
+                    <img src="My Pic.png" alt="">
+                    <h2>Shayan Ali</h2>
+                    <p>A dependable frontend developer who consistently delivers clean, well-structured code. Strong understanding of responsive design.</p>
+                </div>
+                <div class="client">
+                    <img src="saleem.png" alt="">
+                    <h2>Saleemullah</h2>
+                    <p>This Portfolio higlights consistent effort, practical skills, and a clear understanding of key concepts.</p>
+                </div>
+             </div>
+             <div class="contact" id="contact" >
+                <h1>Contact Me</h1>
+                <form action="">
+                    <div class="group">
+                        <input type="text" required>
+                        <label for="">Enter Your Name</label>
+                    </div>
+                    <div class="group">
+                        <input type="text" required>
+                        <label for="">Email</label>
+                    </div>
+                      <div class="group">
+                        <input type="text" required>
+                        <label for="">Message</label>
+                    </div>
+                      <button id="btn">Submit</button>
+                </form>
+             </div>
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+    <script>
+        let slide=document.getElementById("slide");
+        let Prev=document.getElementById("Prev");
+        let Next=document.getElementById("Next");
+        let currentslider=0;
+        Next.onclick=function(){
+            if(currentslider < 4){
+                currentslider++;
+                updateslider();
+            }
+        }
+          Prev.onclick=function(){
+            if(currentslider > 0){
+                currentslider--;
+                updateslider();
+            }
+        }
+        function updateslider(){
+            slide.style.transform=`translateX(-${currentslider * 440}px)`;
+        }
+    </script>
+</body>
+
+</html>
